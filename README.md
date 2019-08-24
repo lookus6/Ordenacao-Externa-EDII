@@ -20,6 +20,6 @@ Módulo responsável por possuir as funções auxiliares que realizarão a manip
 
 - [Gabriel Alejandro](https://github.com/AlfafaWolf)
 - Gilmar Souza
-- Lucas Seixas
-- Marcos Carnielli
+- [Lucas Seixas](https://github.com/lookus6)
+- [Marcos Carnielli](https://github.com/marcosgianetti)
 - [Rafael Rodrigues](https://github.com/rafajpr)
