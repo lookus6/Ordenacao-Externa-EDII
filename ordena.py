@@ -25,8 +25,7 @@ def insertion_sort(arr):
             arr[j + 1] = arr[j]
             j -= 1
         arr[j + 1] = key
-    pass
-
+        
 
 def f_way_sort(buffer_size: int, input_paths: list, output_path: str):
     """
