@@ -10,6 +10,21 @@ def insertion_sort(arr):
     Args:
         arr: Uma lista de dados homogeneos
     """
+    # Percorre a lista
+    for i in range(1, len(arr)):
+
+        #key recebe valor da lista na posição 'i'
+        key = arr[i]
+
+        """
+        Move os elementos de 'arr[0...i-1]' que são maiores que a 'key'
+        para uma posição à frente de sua posição atual
+        """
+        j = i - 1
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
     pass
 
 
