@@ -1,11 +1,11 @@
 """
-O modulo ordena.py possui as funcoes de ordenacao ultilizadas no projeto, tanto a
+O modulo ordena.py possui as funções de ordenação ultilizadas no projeto, tanto a
 Interna como a Externa.
 """
 
 def insertion_sort(arr):
     """
-    Ordena uma lista homogenea, utilizando Ordenacao por Insercao
+    Ordena uma lista homogenea, utilizando Ordenação por Inserção
 
     Args:
         arr: Uma lista de dados homogeneos
@@ -27,14 +27,14 @@ def insertion_sort(arr):
         arr[j + 1] = key
         
 
-def f_way_sort(buffer_size: int, input_paths: list, output_path: str):
+def f_way_sort(buffer_size: int, input_path: str, output_path: str):
     """
     Funcao de Ordenacao Externa, usando intercalacao de f-Caminhos.
     O algoritmo pega todas as entradas de arquivos e gera um arquivo
     de saida com todos os dados dos arquivos anteriores porem ordenados. 
 
     Os arquivos de entrada devem ter cada registro em uma linha,
-    e o arquivo de saida possui uma unica linha de registros com
+    e o arquivo de saida possui uma única linha de registros com
     cada registro separado por uma ' , '.
 
     Example:
@@ -49,7 +49,6 @@ def f_way_sort(buffer_size: int, input_paths: list, output_path: str):
 
     Args:
         buffer_size: Tamanho do buffer 
-        input_paths: Lista com os paths dos arquivos de entrada
-        output_path: Path do arquivo de saida
+        input_path: Path do arquivo de entrada
+        output_path: Path do arquivo de saída
     """
-    pass
