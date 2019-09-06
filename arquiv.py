@@ -38,7 +38,12 @@ def fita_generator(num_fitas: int, output: str, name: str = 'fita') -> list:
     Returns:
         Uma lista de arquivos abertos
     """
-    pass
+    files = list()
+    for n in range(num_fitas):
+        filePath = f"{output}{name}{str(n + 1)}.txt"
+        arquivo = open(filePath, 'w')
+        files.append(arquivo)
+    return files
 
 
 def fita_closer(fitas: list):
