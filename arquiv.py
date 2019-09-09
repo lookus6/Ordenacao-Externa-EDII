@@ -3,7 +3,7 @@ O modulo arquiv.py providência funções auxiliares para o programa de Ordenaç
 Externa, realizando a manipulação dos arquivos externos, tais como: criar, ler e escrever.
 """
 
-def input_generator(num_elements: int, output: str, name: str = 'input', minNum: int = 0, maxNum: int = 100000):
+def input_generator(num_elements: int, output: str, name: str = 'input', minNum: int = 0, maxNum: int = 100):
     """
     Cria um arquivo de entrada com elementos aleatórios
 
@@ -23,7 +23,14 @@ def input_generator(num_elements: int, output: str, name: str = 'input', minNum:
         minNum (optional): Menor elemento (inclusivo)
         maxNum (optional): Maior elemento (inclusivo)
     """
-    pass
+    import random 
+
+    filePath = f"{output}{name}.txt"
+    arquivo = open(filePath, 'w')
+    for x in range(num_elements):
+        i = random.randint(minNum,maxNum)
+        arquivo.write("%d\n" % i)
+    arquivo.close()
 
 
 def fita_generator(num_fitas: int, output: str, name: str = 'fita') -> list:
